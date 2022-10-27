@@ -11,7 +11,18 @@ import Counter from './components/Counter';
 import UserConditions from './components/UserConditions';
 import ShortCricuit from './components/ShortCricuit';
 import ListRendering from './components/ListRendering';
+import LifeCycleA from './components/LifeCycleA';
 import EventBind from './components/EventBind';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
+import Form from './components/Form';
+import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
+import PortalDemo from './components/PortalDemo';
+import ErrorBound from './components/ErrorBound';
+import FocusInput from './components/FocusInput';
+import ClickCounter from './components/ClickCounter';
 
 function App() {
   return (
@@ -31,6 +42,17 @@ function App() {
       <UserConditions/>
       <ShortCricuit/>
       <ListRendering/>
+      <LifeCycleA/>
+      <FragmentDemo/>
+      <PureComp/>
+      <Table/>
+      <Form/>
+      <FocusInput/>
+      <RefsDemo/>
+      <PortalDemo/>
+      <ParentComp/>
+      <ClickCounter/>
+      <ErrorBound name="Boundaries"></ErrorBound>
       <EventBind/>
     </div>
   );
