@@ -22,6 +22,7 @@ import RefsDemo from './components/RefsDemo';
 import PortalDemo from './components/PortalDemo';
 import ErrorBound from './components/ErrorBound';
 import FocusInput from './components/FocusInput';
+import HoverCounter from './components/HoverCounter';
 import ClickCounter from './components/ClickCounter';
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
       <RefsDemo/>
       <PortalDemo/>
       <ParentComp/>
+      <HoverCounter/>
       <ClickCounter/>
       <ErrorBound name="Boundaries"></ErrorBound>
       <EventBind/>

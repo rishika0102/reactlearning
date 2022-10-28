@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import WithCounter from './WithCounter';
 
 class HoverCounter extends Component {
 
@@ -9,13 +10,15 @@ class HoverCounter extends Component {
     }
   }
 
-  render(){
+  render() {
+    const {count, incrementCount} = this.props
     return (
       <div>
-        <p>Click Counter</p>
+        <p>Click Conter</p>
+        <button onClick={incrementCount}>Click {count} Counter</button>
       </div>
     )
   }
 }
 
-export default HoverCounter
+export default WithCounter(HoverCounter)

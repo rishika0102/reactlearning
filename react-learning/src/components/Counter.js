@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import WithCounter from './WithCounter';
 
 class Counter extends Component {
   constructor(props) {
@@ -8,14 +9,8 @@ class Counter extends Component {
     }
   }
 
-  increment() {
-    // this.state.count = this.state.count + 1;
-    this.setState({
-      count: this.state.count + 1
-    })
-  }
-
   render() {
+    const {count, incrementCount} = this.props
     return (
       <div>
         <h3>Click on increment for counter</h3>
@@ -23,10 +18,10 @@ class Counter extends Component {
           Count - {this.state.count}
         </div>
         <p>Counter implementation by setState</p>
-        <button onClick={()=> this.increment()}>Increment</button>
+        <button onClick={()=> incrementCount()}>Increment</button>
       </div>
     )
   }
 }
 
-export default Counter
+export default WithCounter(Counter)
