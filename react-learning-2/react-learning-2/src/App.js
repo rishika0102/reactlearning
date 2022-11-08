@@ -15,6 +15,7 @@ import ContextReducer from './components/ContextReducer';
 import ContextReducerC from './components/ContextReducerC';
 import CallBack from './components/CallBack';
 import Memo from './components/Memo';
+import FocusInput from './components/FocusInput';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -59,6 +60,7 @@ function App() {
       </countContext.Provider>
       <CallBack/>
       <Memo/>
+      <FocusInput/>
     </div>
   );
 }
