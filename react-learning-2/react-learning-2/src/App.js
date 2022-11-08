@@ -16,6 +16,10 @@ import ContextReducerC from './components/ContextReducerC';
 import CallBack from './components/CallBack';
 import Memo from './components/Memo';
 import FocusInput from './components/FocusInput';
+import ClassTimer from './components/ClassTimer';
+import DocTitleOne from './components/DocTitleOne';
+import DocTitleTwo from './components/DocTitleTwo';
+import UserForm from './components/UserForm';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -60,7 +64,11 @@ function App() {
       </countContext.Provider>
       <CallBack/>
       <Memo/>
+      <UserForm/>
       <FocusInput/>
+      <ClassTimer />
+      <DocTitleOne />
+      <DocTitleTwo />
     </div>
   );
 }
